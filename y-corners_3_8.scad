@@ -1,6 +1,6 @@
 // nelsoncs 2013Jun05 - NCSAppSoft.com
 // modified to support:
-// 1. U.S. measurements for y-idler for 3/8 in. rod threaded, 5/16 in. rod smooth
+// 1. U.S. measurements for y-corners for 3/8 in. rod threaded, 5/16 in. rod smooth
 // 
 // Original based on:
 // PRUSA iteration3

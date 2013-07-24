@@ -1,9 +1,10 @@
-// nelsoncs 2013Jun05 
+// nelsoncs 2013Jun05 - NCSAppSoft.com
 // modified to support:
 // 1. U.S. measurements for y-idler for 3/8 in. rod, 5/16 in. bolt holding 608ZZG bearing
 // 2. "fake bearing" was causing problems with two-manifold edges, has been widened to 
 // create an overlap with the part
 // 
+// Original based on:
 // PRUSA iteration3
 // Y idler
 // GNU GPL v3
