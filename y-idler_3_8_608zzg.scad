@@ -1,10 +1,3 @@
-// nelsoncs 2013Jun05 - NCSAppSoft.com
-// modified to support:
-// 1. U.S. measurements for y-idler for 3/8 in. rod, 5/16 in. bolt holding 608ZZG bearing
-// 2. "fake bearing" was causing problems with two-manifold edges, has been widened to 
-// create an overlap with the part
-// 
-// Original based on:
 // PRUSA iteration3
 // Y idler
 // GNU GPL v3
@@ -73,8 +66,8 @@ module y_idler_holes(){
 		cylinder(h = opening_width, r=opening_diameter/2);
 
    		// The fake bearing
-   		%translate([0, 0, (external_width/2)-(bearing_width/2)-0.5]) 
-		cylinder(h = bearing_width+1, r=(22/2)+2*0.66);
+   		%translate([0, 0, external_width/2-bearing_width/2]) 
+		cylinder(h = bearing_width, r=(22/2)+2*0.66);
 
    		// The two bumps around the center of the bearing
    		translate([0,0,wall_thickness]) 
@@ -95,7 +88,7 @@ module y_idler_holes(){
  	}
 	
 	// tensioner bolt and nut
- 	translate([0, 16+22+elongation+tensioner_length+2-12, external_width/2]) 
+ 	translate([0, 16+22+elongation+tensioner_length+2-10, external_width/2]) 
 	rotate([90, 0, 0]) {
 		nut(5.8, 5);
 		translate([0, 0, -5]) cylinder(r=2, h=10);
